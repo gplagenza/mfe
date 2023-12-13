@@ -1,4 +1,4 @@
-name: deploy-container-v3
+name: deploy-container-v4
 
 on:
   push:
@@ -28,3 +28,6 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_DEFAULT_REGION: eu-south-1
+
+
+

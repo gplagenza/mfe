@@ -22,7 +22,6 @@ jobs:
       - run: npm run build
 
       - uses: shinyinc/action-aws-cli@v1.2
-      - run: aws s3api head-object --bucket ${{ secrets.AWS_S3_BUCKET_NAME }} --key /container/latest/index.html
       - run: aws s3api head-object --bucket ${{ secrets.AWS_S3_BUCKET_NAME }} --key container/latest/index.html
       - run: aws s3 sync dist s3://${{ secrets.AWS_S3_BUCKET_NAME }}/container/latest
         env:

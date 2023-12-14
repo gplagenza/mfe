@@ -17,7 +17,7 @@ const prodConfig = {
         new ModulefederationPlugin({
             name: 'container', //not used, added for clarity. Only needed for Remotes
             remotes: { //list projects that the Container can search to get additional code
-                marketing: `marketing@${domain}/marketing/remoteEntry.js`
+                marketing: `marketing@${domain}/marketing/latest/remoteEntry.js`
             },
             shared: packageJson.dependencies,
         })
